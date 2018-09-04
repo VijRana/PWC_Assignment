@@ -1,0 +1,6 @@
+<div>
+  <app-employee-list (sendDetail)="getDetails($event)"></app-employee-list>
+</div>
+<div *ngFor="let emp of emplyees">
+  {{emp.name}}
+</div>

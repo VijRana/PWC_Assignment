@@ -1,0 +1,22 @@
+<div class="container" >
+  <div class="twelve wide column" *ngFor="let employee of sortedEmployee()" style="border:1px solid blue">
+    <a class="ui large header">
+      {{employee.name}}
+    </a>
+    <ul class="ui big horizontal list voters">
+      <li class="item">
+        <a href (click)="rankUp(employee)">
+          <i class="arrow up icon"></i>
+        </a>
+      </li>
+      <li class="item"> 
+        <a href (click)="rankDown(employee)">
+          <i class="arrow down icon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button >Preview</button>
+  <button (click)="goToEmployeeDetailsPage()">Save</button>
+</div>
+
